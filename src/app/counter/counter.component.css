@@ -1,0 +1,9 @@
+.number-box {
+   border: solid black 1px; 
+   background: #ededed; 
+   text-align: center;
+}
+
+:host.ng-invalid.ng-touched .number-box {
+    background: yellow;
+}

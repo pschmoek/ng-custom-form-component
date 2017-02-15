@@ -1,0 +1,7 @@
+<form [formGroup]="ageForm">
+    <app-counter-form-control label="Age" [control]="ageControl"></app-counter-form-control>
+</form>
+<div style="margin-top: 20px">
+    <span>Value: {{ ageForm.value | json }}</span>
+    <span>Status: {{ ageForm.status }}</span>
+</div>

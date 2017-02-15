@@ -1,0 +1,7 @@
+<div>
+    <label for="controlComponent">{{label}}</label>
+    <app-counter id="controlComponent" [formControl]="control"></app-counter>
+    <div *ngIf="control.touched">
+        <span *ngIf="control.errors?.validateAge">The age must be above 0.</span>
+    </div>
+</div>
